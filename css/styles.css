@@ -1,0 +1,352 @@
+:root {
+    --premery-color: #b80257;
+    --text-color: #ffffff;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Source Sans 3", sans-serif;
+}
+h1, h2 ,h3 ,h4, h5, h6 {
+    font-family: "PT Sans", sans-serif;
+}
+
+/* start header */
+
+
+.wrap-header {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 100px;
+    background-image: url(https://themazine.com/html/scholars-lms/images/home/banner-7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header {
+    height: inherit;
+    background: rgba(0, 0, 0, 0.6);
+}
+.heading {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+    height: inherit;
+    flex-direction: column;
+}
+.heading--main {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.header--list {
+    display: flex;
+    color: var(--text-color);
+}
+.header--list > li {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.header--list > li > a {
+    color: var(--text-color);
+    display: block;
+    padding: 10px 25px;
+
+}
+
+/* menu navbar */
+.header--list  li:hover .header--list__nav{
+    visibility: visible;
+    transform: scaleY(1);
+}
+.header--list__nav {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: all 0.3s linear;
+    background-color: var(--text-color);
+}
+.header--list__nav li a {
+    display: block;
+    padding: 15px;
+    transition: all 0.4s linear;
+    color: rgba(0, 0, 0, 0.6);
+}
+.header--list__nav li:hover {
+    background-color: var(--premery-color);
+}
+.header--list__nav li a:hover {
+    color: var(--text-color);
+    transform: translateX(4px);
+}
+
+
+/* end menu navbar */
+.fas {
+    color: var(--text-color);
+    display: flex;
+    font-size: 1.6rem;
+    padding: 10px;
+}
+.header--contact {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--text-color);
+}
+.header--contact__font {
+    font-weight: 700;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+.header--content {
+    display: flex;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+.header--content__hover:hover {
+    color: #783df0;
+}
+.header--content__before::before {
+    content: "/";
+    padding: 0 5px;
+}
+.header--content li a {
+    color: inherit;
+}
+
+/* content */
+
+.content--address {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+.wrap-content {
+    margin-bottom: 100px;
+
+}
+.content {   
+    margin: 0 auto;
+    width: 1170px;
+}
+.content--picture {
+    width: 58.33333333%;
+}
+.content--contact {
+    background: url(https://themazine.com/html/scholars-lms/images/inner-page/4.jpg);
+    flex-grow: 1;
+    background-size: cover;
+}
+.content--opacity {
+    width: 100%;
+    height: 100%;
+    background: rgba(119, 60, 238, 0.85);
+}
+.content--heading {
+    padding: 60px 0 92px 70px;
+}
+.content--heading h1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 3rem;
+    color: var(--text-color);
+    padding-bottom: 18px;
+    margin-bottom: 100px;
+}
+.content--heading h1::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    border-bottom: 2px solid #f2b604;
+    }
+.content--heading__info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.content--heading__info li {
+    display: flex;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-right: 70px;
+    gap: 20px;
+}
+.content--heading__info li i , .far {
+    font-size: 2.5rem;
+    padding: 10px;
+
+}
+.content--heading__info li p {
+    margin: auto 0;
+}
+
+
+/* fomrm input  */
+.content--input {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 1170px;
+    max-height: 100vh;
+    margin-bottom: 100px;
+}
+.row {
+    display: flex;
+    width: 1170px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px
+}
+.row--input {
+    padding: 25px 10px;
+    width: 46%;
+    background: #f3f0fa;
+    border: none;
+    outline: none;
+}
+.row input:focus,textarea:focus {
+    border: 1px solid #783df0;;
+}
+.input--huge {
+    width: 1170px;
+}
+textarea {
+    padding: 30px;
+    width: 100%;
+    height: 400px;
+    background: #f3f0fa;
+    border: none;
+    outline: none;
+    margin-bottom: 50px;
+}
+.btn {
+    padding: 10px 40px;
+    background-color: #783df0;
+    color: var(--text-color);
+    border: none;
+    transition: all 0.4s linear;
+}
+.btn:hover {
+    background-color: var(--premery-color);
+}
+
+/* iframe */
+iframe {
+    width: 100%;
+}
+
+/* footer */
+.wrap--footer {
+    width: 100%;
+    height: 500px;
+    background-color: #151515;
+}
+
+.footer--text__color{
+    color: rgba(143, 161, 161, 1);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    gap: 10px;
+}
+.footer--text__color li a{
+    color: rgba(143, 161, 161, 1);
+    font-size: 1.4rem;
+    transition: all 0.1s linear;
+}
+.footer--text__color li a:hover {
+    color: var(--premery-color);
+}
+.footer--text__color li h1 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+.col-md-2 {
+    width: 16.66666667%;
+}
+.footer {
+    padding-top: 50px;
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+.footer--logo {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.4rem;
+}
+.footer--logo__icon {
+    display: flex;
+    gap: 20px;
+}
+.footer--subscribe__color {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.footer--input {
+    background-color: #272727;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.btn-primery {
+    position: relative;
+    top: 0;
+    left: 0;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    height: 40px;
+    padding: 10px 10px;
+    background-color: var(--premery-color);
+    color: var(--text-color);
+    border-radius: 20px;
+    transition: all 0.4s linear;
+    z-index: 0;
+}
+.btn-primery::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    transform: scale(0);
+    transform-origin: center;
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    z-index: -1 ;
+    transition: all 0.3s linear;
+    background-color: var(--text-color);
+}
+.btn-primery:hover::after {
+    transform: scale(1);
+}
+.btn-primery:hover  {
+    background-color: var(--text-color);
+    color: var(--premery-color);
+}
