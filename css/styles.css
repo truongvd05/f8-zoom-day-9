@@ -61,15 +61,15 @@ h1, h2 ,h3 ,h4, h5, h6 {
 
 /* menu navbar */
 .header--list  li:hover .header--list__nav{
-    visibility: visible;
+    opacity: 1;
     transform: scaleY(1);
 }
 .header--list__nav {
-    visibility: hidden;
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 200px;
+    width: 220px;
+    opacity: 0;
     transform: scaleY(0);
     transform-origin: top center;
     transition: all 0.3s linear;
@@ -91,6 +91,9 @@ h1, h2 ,h3 ,h4, h5, h6 {
 
 
 /* end menu navbar */
+
+
+
 .fas {
     color: var(--text-color);
     display: flex;
